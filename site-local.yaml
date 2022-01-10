@@ -4,9 +4,11 @@ site:
   start_page: stargate::index.adoc
 
 content:
-  edit_url: 'https://github.com/stargate/docs/blob/master/{path}'
+  edit_url: 'https://github.com/stargate/docs/blob/main/{path}'
   sources:
     - url: .
+      branches: HEAD
+    - url: ../../adoc-howto
       branches: HEAD
 
 ui:

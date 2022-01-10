@@ -30,7 +30,7 @@ See xref:developers-guide:install/building.adoc[Building]
 * xref:quickstart:quickstart.adoc[QuickStart guides]
 * xref:developers-guide:install/install_overview.adoc[Installing Stargate]
 * xref:developers-guide:devguide.adoc[Developer's Guide]
-* xref:developers-guide:api_ref/api.adoc[API references]
+* xref:api.adoc[API references]
 * xref:FAQ.adoc[FAQ]
 
 == Community

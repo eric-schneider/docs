@@ -71,7 +71,7 @@ link:https://github.com/stargate/stargate/tree/master/grpc-proto/proto[imported 
 Select `ExecuteQuery` from the imported files.
 Set the environment to `localhost:8090` if running a Stargate docker container.
 In the metadata, add an authentication token with `{"x-cassandra-token": "<auth_token>"}`.
-If you have followed one of the xref:gRPC-using.adoc[gRPC client] instructions,
+If you have followed one of the xref:developers-guide:gRPC-using.adoc[gRPC client] instructions,
 add the following query and push the run button:
 
 [source, plaintext]
