@@ -1,7 +1,9 @@
 = Frequently asked questions
 
 == What should I do if I find a bug?
-
+.See the answer
+[%collapsible%open]
+====
 - If you've found an issue while using Stargate, please file a bug in the
 https://github.com/stargate/stargate[Stargate repo] and use the bug label.
 It's also helpful to include the full stack trace and the Stargate and database
@@ -9,9 +11,12 @@ version that you are using so that we can efficiently debug.
 - If you've found an issue with the documentation, please file an issue in the
 https://github.com/stargate/docs[Stargate docs repo]. Pull requests are also
 accepted!
+====
 
 == Why should I use Stargate when I already have an existing database?
-
+.See the answer
+[%collapsible]
+====
 Stargate provides APIs, data types and access methods that bring new capabilities
 to existing databases.
 Currently Stargate adds both REST and GraphQL APIs for CRUD access to data stored
@@ -21,9 +26,12 @@ consumption in cloud environments.
 When using Stargate with Cassandra, you can offload the request coordination
 overhead from your storage instances onto Stargate instances
 which has shown latency improvements in preliminary testing (results coming soon).
+====
 
 == How can I get involved?
-
+.See the answer
+[%collapsible]
+====
 To get started building a new API extension, have a look at the existing
 https://github.com/stargate/stargate/tree/master/restapi[REST API implementation]
 or the https://github.com/stargate/stargate/tree/master/graphqlapi[GraphQL API implementation]
@@ -35,3 +43,11 @@ https://github.com/stargate/stargate/discussions[Github discussion page] to disc
 
 **Note** that the internal APIs are under active development and they are
 likely to change before the first version is released.
+====
+
+== What are the concepts of Stargate?
+.See the answer
+[%collapsible]
+====
+include::{conceptmod}:concepts.adoc[]
+====
