@@ -1,7 +1,7 @@
 mutation dropIndexBdate {
 
   reader: dropIndex(
-      keyspaceName:"library",
+      keyspaceName:"{gkeyspace}",
       indexName:"reader_bdate_idx"
   )
 }

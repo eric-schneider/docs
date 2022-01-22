@@ -6,8 +6,8 @@ Obtain the authentication token:
 curl -L -X POST 'http://127.0.0.2:8081/v1/auth' \
      -H 'Content-Type: application/json' \
      --data-raw '{
-        "username": "cassandra",
-        "password": "cassandra"
+        "username": "{cass_user}",
+        "password": "{cass_passwd}"
      }'
 
 {"authToken":"2df7e75d-92aa-4cda-9816-f96ccbc91d80"}

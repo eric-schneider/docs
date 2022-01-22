@@ -1,7 +1,7 @@
 # create a user-defined type (UDT)
 mutation createAddressUDT {
   createType(
-    keyspaceName: "library"
+    keyspaceName: "{gkeyspace}"
     typeName: "address_type"
     fields: [
       { name: "street", type: { basic: TEXT } }

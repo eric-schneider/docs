@@ -1,5 +1,5 @@
 # drop a table
 mutation dropTableBook {
-  dropTable(keyspaceName:"library",
+  dropTable(keyspaceName:"{gkeyspace}",
     tableName:"article")
 }

@@ -1,5 +1,5 @@
 query GetTables {
-  keyspace(name: "library") {
+  keyspace(name: "{gkeyspace}") {
       name
       tables {
           name

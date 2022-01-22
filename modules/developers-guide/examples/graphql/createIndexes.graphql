@@ -1,18 +1,18 @@
 mutation createIndexes {
   book: createIndex(
-    keyspaceName:"library",
+    keyspaceName:"{gkeyspace}",
     tableName:"book",
     columnName:"author",
     indexName:"author_idx"
   )
   reader: createIndex(
-      keyspaceName:"library",
+      keyspaceName:"{gkeyspace}",
       tableName:"reader",
       columnName:"birthdate",
       indexName:"reader_bdate_idx"
   )
   reader2: createIndex(
-      keyspaceName:"library",
+      keyspaceName:"{gkeyspace}",
       tableName:"reader",
       columnName:"email",
       indexName:"reader_email_idx"

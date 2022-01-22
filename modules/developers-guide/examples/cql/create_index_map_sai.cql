@@ -1,4 +1,4 @@
 CREATE CUSTOM INDEX eval_idx
-  ON users_keyspace.users (KEYS(evaluations))
+  ON {rkeyspace}.{rtable} (KEYS(evaluations))
   USING 'StorageAttachedIndex'
   WITH OPTIONS = ('case_sensitive': 'false');

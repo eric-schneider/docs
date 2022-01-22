@@ -1,4 +1,4 @@
 # drop a UDT
 mutation dropType {
-  dropType(keyspaceName:"library", typeName:"address_type", ifExists:true)
+  dropType(keyspaceName:"{gkeyspace}", typeName:"address_type", ifExists:true)
 }

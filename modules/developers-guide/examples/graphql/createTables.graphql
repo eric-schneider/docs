@@ -1,8 +1,8 @@
-# create two tables (book, reader) in library with a single mutation
+# create two tables (book, reader) in {gkeyspace} with a single mutation
 # DATA TYPES: TEXT, UUID, SET(TEXT), TUPLE(TEXT, INT, DATE), LIST(UDT)
 mutation createTables {
   book: createTable(
-    keyspaceName:"library",
+    keyspaceName:"{gkeyspace}",
     tableName:"book",
     partitionKeys: [ # The keys required to access your data
       { name: "title", type: {basic: TEXT} }
@@ -12,7 +12,7 @@ mutation createTables {
     ]
   )
   reader: createTable(
-    keyspaceName:"library",
+    keyspaceName:"{gkeyspace}",
     tableName:"reader",
     partitionKeys: [
       { name: "name", type: {basic: TEXT} }

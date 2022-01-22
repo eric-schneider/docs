@@ -1,4 +1,4 @@
-./starctl
+./starctl \
 --cluster-name stargate_test_cluster \  
 --cluster-seed 172.31.29.170 \  
 --cluster-version 3.11 \  

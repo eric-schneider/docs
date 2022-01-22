@@ -3,7 +3,7 @@
 
 mutation createTableIfNotExists {
   magazine: createTable(
-    keyspaceName:"library",
+    keyspaceName:"{gkeyspace}",
     tableName:"magazine",
     partitionKeys: [ # The keys required to access your data
       { name: "title", type: {basic: TEXT} }
@@ -19,7 +19,7 @@ mutation createTableIfNotExists {
     ]
   )
   article: createTable(
-    keyspaceName:"library",
+    keyspaceName:"{gkeyspace}",
     tableName:"article",
     partitionKeys: [ # The keys required to access your data
       { name: "title", type: {basic: TEXT} }

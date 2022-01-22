@@ -1,6 +1,6 @@
 mutation {
   deploySchema(
-    keyspace: "library"
+    keyspace: "{gkeyspace}"
     expectedVersion: "1da4f190-b7fd-11eb-8258-1ff1380eaff5"
     schema: """
     type Address @cql_entity(target: UDT) @cql_input {

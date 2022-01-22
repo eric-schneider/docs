@@ -1,3 +1,3 @@
-curl -X GET 'localhost:8082/v2/schemas/namespaces/myworld' \
---header "X-Cassandra-Token: $AUTH_TOKEN" \
+curl -X GET '{base_doc_url}{base_doc_schema}/{namespace}' \
+--header "X-Cassandra-Token: {auth_token}" \
 --header 'Content-Type: application/json'

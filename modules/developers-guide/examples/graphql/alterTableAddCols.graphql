@@ -2,7 +2,7 @@
 # DATA TYPES: TEXT, INT, SET(TEXT)
 mutation alterTableAddCols {
   alterTableAdd(
-    keyspaceName:"library",
+    keyspaceName:"{gkeyspace}",
     tableName:"book",
     toAdd:[
       { name: "isbn", type: { basic: TEXT } }

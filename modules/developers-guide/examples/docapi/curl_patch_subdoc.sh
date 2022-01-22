@@ -1,6 +1,6 @@
 curl -L \
--X PATCH 'https://localhost:8082/v2/namespaces/myworld/collections/fitness/Joey/weights' \
---header "X-Cassandra-Token: $AUTH_TOKEN" \
+-X PATCH '{base_doc_url}{base_doc_api}/{namespace}/collections/{collection}/Joey/weights' \
+--header "X-Cassandra-Token: {auth_token}" \
 --header 'Content-Type: application/json' \
 --data '{
     "reps": 10,

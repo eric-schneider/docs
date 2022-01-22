@@ -4,7 +4,7 @@ cd -P -- "$(dirname -- "$0")" # switch to this dir
 source ../test_oss_common.sh
 
 # SET VARIABLES FOR STARGATE
-base_url=https://localhost:8080
+base_url=http://localhost:8080
 base_gql_schema=/graphql-schema
 base_gql_admin=/graphql-admin
 base_gql_api=/graphql
@@ -23,7 +23,7 @@ done
 
 echo -e "\n\ncreate keyspace\n"
 ./1curl_createKeyspace.sh.tmp
-#| jq -r '.name | test("library")'
+#| jq -r '.name | test("$gkeyspace")'
 
 echo -e "\nDeploy the graphql schema\n"
 cp ./schema.graphql /tmp
@@ -39,7 +39,7 @@ cp ./schema.graphql /tmp
 echo -e "\nGet keyspace schema\n"
 echo -e "\nAll schema\n"
 ./1curl_getAllKsSchema.sh.tmp
-echo -e "\nSchema for library\n"
+echo -e "\nSchema for $gkeyspace\n"
 ./1curl_getParticularKsSchema.sh.tmp
 
 echo -e "\nInsert 2 books\n"
@@ -57,7 +57,7 @@ echo -e "\nInsert 2 readers\n"
 ./1curl_insertReaderJane.sh.tmp
 ./1curl_insertReaderHerman.sh.tmp
 
-echo -e "\nInsert 4 library collections\n"
+echo -e "\nInsert 4 $gkeyspace collections\n"
 ./1curl_insertCSRMphoto.sh.tmp
 ./1curl_insertCSRMbook.sh.tmp
 ./1curl_insertWSACphoto.sh.tmp

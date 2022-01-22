@@ -2,11 +2,11 @@
 
 # SET THE AUTH_TOKEN FOR ALL THE OTHER COMMANDS
 
-export AUTH_TOKEN=$(curl -s -L -X POST 'http://localhost:8081/v1/auth' \
+export AUTH_TOKEN=$(curl -s -L -X POST '{base_auth_url}/v1/auth' \
   -H 'Content-Type: application/json' \
   --data-raw '{
-    "username": "cassandra",
-    "password": "cassandra"
+    "username": "{cass_user}",
+    "password": "{cass_passwd}"
 }' | jq -r '.authToken')
 
 echo "drop ns to clear all data: "

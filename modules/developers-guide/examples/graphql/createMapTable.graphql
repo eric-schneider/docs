@@ -3,7 +3,7 @@
 # Sample: btype=Editor, badge_id=1, earned = [Gold:010120, Silver:020221]
 mutation createMapTable {
   badge: createTable (
-    keyspaceName:"library",
+    keyspaceName:"{gkeyspace}",
     tableName: "badge",
     partitionKeys: [
       {name: "btype", type: {basic:TEXT}}

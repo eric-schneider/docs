@@ -1,7 +1,7 @@
 # drop a column format from a table
 mutation dropColumnFormat {
     alterTableDrop(
-    keyspaceName:"library",
+    keyspaceName:"{gkeyspace}",
     tableName:"book",
     toDrop:["format"]
   )

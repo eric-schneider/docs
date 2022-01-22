@@ -1,6 +1,6 @@
 # Works in localhost:8080/graphql-admin
 {
-  schemas(keyspace: "library") {
+  schemas(keyspace: "{gkeyspace}") {
     version
     deployDate
     contents
