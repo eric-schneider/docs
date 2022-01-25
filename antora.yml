@@ -6,6 +6,7 @@ asciidoc:
   attributes:
     sectanchors: ''
     sectlinks: ''
+    stargate-github: 'https://github.com/stargate/stargate'
     stargate-docker-tag: v1.0.41
     stargate-docker-tag-3x: v1.0.41
     stargate-docker-tag-40: v1.0.41
@@ -18,12 +19,18 @@ asciidoc:
     dse-tag-68: '6.8'
     dse-alt-tag-68: '68'
     auth_token: '$AUTH_TOKEN'
+    base_auth_url: 'http://localhost:8081'
+    cass_user: 'cassandra'
+    cass_passwd: 'cassandra'
     base_url: 'http://localhost:8080'
+    base_rest_url: 'http://localhost:8082'
+    base_doc_url: 'http://localhost:8082'
     base_rest_schema: '/v2/schemas/keyspaces'
     base_doc_schema: '/v2/schemas/namespaces'
     base_rest_api: '/v2/keyspaces'
     base_doc_api: '/v2/namespaces'
     base_gql_schema: '/graphql-schema'
+    base_gql_admin: '/graphql-admin'
     base_gql_api: '/graphql'
     rkeyspace: 'users_keyspace'
     rtable: 'users'
