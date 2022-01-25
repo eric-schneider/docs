@@ -1,5 +1,5 @@
-curl -s -X POST https://localhost:8082/v2/keyspaces/users_keyspace/users \
--H  "X-Cassandra-Token: $AUTH_TOKEN" \
+curl -s -X POST {base__rest_url}{base_rest_api}/{rkeyspace}/{rtable} \
+-H  "X-Cassandra-Token: {auth_token}" \
 -H  "Content-Type: application/json" \
 -H  "Accept: application/json" \
 -d '{"firstname": "Janesha",

@@ -1,4 +1,4 @@
-curl -s -L -X GET localhost:8082/v2/schemas/keyspaces/users_keyspace \
--H "X-Cassandra-Token: $AUTH_TOKEN" \
+curl -s -L -X GET {base_rest_url}{base_rest_schema}/{rkeyspace} \
+-H "X-Cassandra-Token: {auth_token}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json"

@@ -1,4 +1,4 @@
 curl -s --location \
---request DELETE localhost:8082/v2/schemas/keyspaces/users_keyspace/tables/users \
---header "X-Cassandra-Token: $AUTH_TOKEN" \
+--request DELETE {base_rest_url}{base_rest_schema}/{rkeyspace}/tables/{rtable} \
+--header "X-Cassandra-Token: {auth_token}" \
 --header "Content-Type: application/json"

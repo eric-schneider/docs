@@ -1,3 +1,3 @@
-curl -s -L -X DELETE localhost:8082/v2/keyspaces/users_keyspace/users/Mookie/Betts \
--H "X-Cassandra-Token: $AUTH_TOKEN" \
+curl -s -L -X DELETE {base_rest_url}{base_rest_schema/{rkeyspace}/users/Mookie/Betts \
+-H "X-Cassandra-Token: {auth_token}" \
 -H "Content-Type: application/json"

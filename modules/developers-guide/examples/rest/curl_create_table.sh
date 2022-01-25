@@ -1,10 +1,10 @@
 curl -s --location \
---request POST localhost:8082/v2/schemas/keyspaces/users_keyspace/tables \
---header "X-Cassandra-Token: $AUTH_TOKEN" \
+--request POST l{base_rest_url}{base_rest_schema/{rkeyspace}/tables \
+--header "X-Cassandra-Token: {auth_token}" \
 --header "Content-Type: application/json" \
 --header "Accept: application/json" \
 --data '{
-	"name": "users",
+	"name": "{rtable}",
 	"columnDefinitions":
 	  [
         {
