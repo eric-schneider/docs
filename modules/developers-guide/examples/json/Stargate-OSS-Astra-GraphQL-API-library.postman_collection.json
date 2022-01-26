@@ -70,7 +70,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces"
 					},
 					"response": []
 				}
@@ -121,9 +121,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -170,9 +170,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -219,9 +219,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -268,9 +268,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -317,9 +317,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -366,9 +366,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -415,9 +415,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -464,9 +464,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -518,9 +518,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -574,9 +574,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -628,9 +628,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -676,9 +676,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -724,9 +724,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -772,9 +772,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -820,9 +820,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -868,9 +868,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -916,9 +916,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -964,9 +964,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -1019,9 +1019,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -1080,9 +1080,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -1136,9 +1136,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -1191,9 +1191,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -1245,9 +1245,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -1293,9 +1293,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_api}}",
+							"raw": "{{base_gql_url}}{{base_gql_api}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_api}}"
+								"{{base_gql_url}}{{base_gql_api}}"
 							]
 						}
 					},
@@ -1347,9 +1347,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -1395,9 +1395,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -1443,9 +1443,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -1491,9 +1491,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -1539,9 +1539,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -1587,9 +1587,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -1635,9 +1635,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -1683,9 +1683,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},
@@ -1731,9 +1731,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
+							"raw": "{{base_gql_url}}{{base_gql_schema}}",
 							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
+								"{{base_gql_url}}{{base_gql_schema}}"
 							]
 						}
 					},

@@ -70,7 +70,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces"
 					},
 					"response": []
 				}
@@ -122,9 +122,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_schema}}",
+							"raw": "{{base_rest_url}}{{base_doc_schema}}",
 							"host": [
-								"{{base_url}}{{base_doc_schema}}"
+								"{{base_rest_url}}{{base_doc_schema}}"
 							]
 						}
 					},
@@ -408,9 +408,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_schema}}",
+							"raw": "{{base_rest_url}}{{base_doc_schema}}",
 							"host": [
-								"{{base_url}}{{base_doc_schema}}"
+								"{{base_rest_url}}{{base_doc_schema}}"
 							]
 						}
 					},
@@ -684,9 +684,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_schema}}",
+							"raw": "{{base_rest_url}}{{base_doc_schema}}",
 							"host": [
-								"{{base_url}}{{base_doc_schema}}"
+								"{{base_rest_url}}{{base_doc_schema}}"
 							]
 						}
 					},
@@ -976,9 +976,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_schema}}",
+							"raw": "{{base_rest_url}}{{base_doc_schema}}",
 							"host": [
-								"{{base_url}}{{base_doc_schema}}"
+								"{{base_rest_url}}{{base_doc_schema}}"
 							]
 						}
 					},
@@ -1255,9 +1255,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_schema}}/{{namespace}}",
+							"raw": "{{base_rest_url}}{{base_doc_schema}}/{{namespace}}",
 							"host": [
-								"{{base_url}}{{base_doc_schema}}"
+								"{{base_rest_url}}{{base_doc_schema}}"
 							],
 							"path": [
 								"{{namespace}}"
@@ -1541,9 +1541,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -1822,9 +1822,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user1}}",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user1}}",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -2103,9 +2103,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user3}}",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user3}}",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -2384,9 +2384,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -2665,9 +2665,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -2946,9 +2946,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}/weights",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}/weights",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -3228,9 +3228,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user1}}",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user1}}",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -3519,9 +3519,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}?page-size=3",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}?page-size=3",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -3809,9 +3809,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -4094,9 +4094,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}/weights",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}/weights",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -4380,9 +4380,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}/weights/type",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}/weights/type",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -4667,9 +4667,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}?where={\"firstname\":{\"$eq\":\"{{user2a}}\"}}&fields=[\"firstname\", \"lastname\",\"weights\"]",
+							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}?where={\"firstname\":{\"$eq\":\"{{user2a}}\"}}&fields=[\"firstname\", \"lastname\",\"weights\"]",
 							"host": [
-								"{{base_url}}{{base_doc_api}}"
+								"{{base_rest_url}}{{base_doc_api}}"
 							],
 							"path": [
 								"{{namespace}}",
@@ -4975,9 +4975,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_doc_schema}}/{{namespace}}",
+							"raw": "{{base_rest_url}}{{base_doc_schema}}/{{namespace}}",
 							"host": [
-								"{{base_url}}{{base_doc_schema}}"
+								"{{base_rest_url}}{{base_doc_schema}}"
 							],
 							"path": [
 								"{{namespace}}"

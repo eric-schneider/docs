@@ -67,7 +67,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces"
 					},
 					"response": []
 				}
@@ -120,12 +120,12 @@
 							"raw": "{\n    \"name\": \"{{rkeyspace}}\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces"
 					},
 					"response": []
 				},
@@ -173,12 +173,12 @@
 							"raw": "{\n    \"name\": \"{{rkeyspace}}\",\n    \"replicas\": 1\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces\n\n{\n    \"name\": \"users_keyspace\",\n    \"replicas\": 1\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces\n\n{\n    \"name\": \"users_keyspace\",\n    \"replicas\": 1\n}"
 					},
 					"response": []
 				},
@@ -219,12 +219,12 @@
 							"raw": "{\n    \"name\": \"users_keyspace_dcs\",\n    \"datacenters\": [ {\"name\": \"dc1\"}, {\"name\": \"dc2\", \"replicas\": 5} ]\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces\n\n{\n    \"name\": \"users_keyspace_dcs\",\n    \"datacenters\": [ {\"name\": \"dc1\"}, {\"name\": \"dc2\", \"replicas\": 5} ]\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces\n\n{\n    \"name\": \"users_keyspace_dcs\",\n    \"datacenters\": [ {\"name\": \"dc1\"}, {\"name\": \"dc2\", \"replicas\": 5} ]\n}"
 					},
 					"response": []
 				},
@@ -269,9 +269,9 @@
 							"raw": "{\n  \"name\": \"address_type\",\n  \"fields\":[\n    {\n      \"name\": \"street\",\n      \"typeDefinition\": \"text\"\n    },\n    {\n      \"name\": \"city\",\n      \"typeDefinition\": \"text\"\n    },\n    {\n      \"name\": \"state\",\n      \"typeDefinition\": \"text\"\n    },\n    {\n      \"name\": \"zip\",\n      \"typeDefinition\": \"text\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/types",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/types",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -321,9 +321,9 @@
 							"raw": "{\n    \"name\": \"{{rtable}}\",\n    \"columnDefinitions\": [\n        {\n            \"name\": \"firstname\",\n            \"typeDefinition\": \"text\"\n        },\n        {\n            \"name\": \"lastname\",\n            \"typeDefinition\": \"text\"\n        },\n        {\n            \"name\": \"favorite_color\",\n            \"typeDefinition\": \"text\"\n        }\n    ],\n    \"primaryKey\": {\n        \"partitionKey\": [\n            \"firstname\"\n        ],\n        \"clusteringKey\": [\n            \"lastname\"\n        ]\n    },\n    \"tableOptions\": {\n        \"defaultTimeToLive\": 0,\n        \"clusteringExpression\": [\n            {\n                \"column\": \"lastname\",\n                \"order\": \"ASC\"\n            }\n        ]\n    }\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -338,7 +338,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
 					},
 					"response": [
 						{
@@ -648,9 +648,9 @@
 							"raw": "{  \n   \"name\": \"email\",  \n   \"typeDefinition\": \"text\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -659,7 +659,7 @@
 								"columns"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{  \n   \"name\": \"email\",  \n   \"typeDefinition\": \"text\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{  \n   \"name\": \"email\",  \n   \"typeDefinition\": \"text\"\n}"
 					},
 					"response": []
 				},
@@ -710,9 +710,9 @@
 							"raw": "{\n   \"name\": \"favorite_books\",\n   \"typeDefinition\": \"set<text>\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -721,7 +721,7 @@
 								"columns"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"favorite_books\",\n   \"typeDefinition\": \"set<text>\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"favorite_books\",\n   \"typeDefinition\": \"set<text>\"\n}"
 					},
 					"response": []
 				},
@@ -765,9 +765,9 @@
 							"raw": "{\n   \"name\": \"top_three_tv_shows\",\n   \"typeDefinition\": \"list<text>\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -776,7 +776,7 @@
 								"columns"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"top_three_tv_shows\",\n   \"typeDefinition\": \"list<text>\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"top_three_tv_shows\",\n   \"typeDefinition\": \"list<text>\"\n}"
 					},
 					"response": []
 				},
@@ -827,9 +827,9 @@
 							"raw": "{\n   \"name\": \"evaluations\",\n   \"typeDefinition\": \"map<int,text>\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -838,7 +838,7 @@
 								"columns"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"evaluations\",\n   \"typeDefinition\": \"map<int,text>\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"evaluations\",\n   \"typeDefinition\": \"map<int,text>\"\n}"
 					},
 					"response": []
 				},
@@ -882,9 +882,9 @@
 							"raw": "{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -893,7 +893,7 @@
 								"columns"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
 					},
 					"response": []
 				},
@@ -937,9 +937,9 @@
 							"raw": "{\n   \"name\": \"address\",\n   \"typeDefinition\": \"address_type\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -948,7 +948,7 @@
 								"columns"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
 					},
 					"response": []
 				},
@@ -992,9 +992,9 @@
 							"raw": "{\n      \"name\": \"first\",\n      \"typeDefinition\": \"varchar\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns/:colname",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns/:colname",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -1010,7 +1010,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
 					},
 					"response": []
 				},
@@ -1054,9 +1054,9 @@
 							"raw": "{\n      \"name\": \"firstname\",\n      \"typeDefinition\": \"varchar\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns/:newcolname",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns/:newcolname",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -1072,7 +1072,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
 					},
 					"response": []
 				},
@@ -1116,9 +1116,9 @@
 							"raw": "{\n    \"name\": \"{{rtable}}\",\n    \"columnDefinitions\": [\n        {\n            \"name\": \"firstname\",\n            \"typeDefinition\": \"text\"\n        },\n        {\n            \"name\": \"lastname\",\n            \"typeDefinition\": \"text\"\n        }\n    ],\n    \"primaryKey\": {\n        \"partitionKey\": [\n            \"firstname\"\n        ],\n        \"clusteringKey\": [\n            \"lastname\"\n        ]\n    },\n    \"tableOptions\": {\n        \"defaultTimeToLive\": 0\n    }\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -1126,7 +1126,7 @@
 								"{{rtable}}"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
 					},
 					"response": []
 				},
@@ -1170,9 +1170,9 @@
 							"raw": "{\n    \"name\": \"{{rtable}}\",\n    \"columnDefinitions\": [\n        {\n            \"name\": \"firstname\",\n            \"typeDefinition\": \"text\"\n        },\n        {\n            \"name\": \"lastname\",\n            \"typeDefinition\": \"text\"\n        },\n        {\n            \"name\": \"favorite_color\",\n            \"typeDefinition\": \"text\"\n        },\n        {\n            \"name\": \"email\",\n            \"typeDefinition\": \"text\"\n        },\n        {\n            \"name\": \"fapvorite_books\",\n            \"typeDefinition\": \"set<text>\"\n        },\n        {\n            \"name\": \"top_three_tv_shows\",\n            \"typeDefinition\": \"list<text>\"\n        },\n        {\n            \"name\": \"evaluations\",\n            \"typeDefinition\": \"map<int,text>\"\n        },\n        {\n            \"name\": \"current_country\",\n            \"typeDefinition\": \"tuple<text, date, date>\"\n        },\n        {\n            \"name\": \"address\",\n            \"typeDefinition\": \"address_type\"\n        }\n    ],\n    \"primaryKey\": {\n        \"partitionKey\": [\n            \"firstname\"\n        ],\n        \"clusteringKey\": [\n            \"lastname\"\n        ]\n    },\n    \"tableOptions\": {\n        \"defaultTimeToLive\": 0\n    }\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -1180,7 +1180,7 @@
 								"{{rtable}}"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns\n\n{\n   \"name\": \"current_country\",\n   \"typeDefinition\": \"tuple<text, date, date>\"\n}"
 					},
 					"response": []
 				},
@@ -1221,9 +1221,9 @@
 							"raw": "{\n    \"column\": \"favorite_books\",\n    \"name\": \"fav_books_idx\",\n    \"ifNotExists\": true\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -1240,7 +1240,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
 					},
 					"response": [
 						{
@@ -1542,9 +1542,9 @@
 							"raw": "\n{\n  \"column\": \"top_three_tv_shows\",\n  \"name\": \"tv_idx\",\n  \"ifNotExists\": true\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -1561,7 +1561,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
 					},
 					"response": [
 						{
@@ -1863,9 +1863,9 @@
 							"raw": "\n{\n  \"column\": \"evaluations\",\n  \"name\": \"evalv_idx\",\n  \"ifNotExists\": true\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -1882,7 +1882,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
 					},
 					"response": [
 						{
@@ -2184,9 +2184,9 @@
 							"raw": "\n{\n  \"column\": \"evaluations\",\n  \"name\": \"evalk_idx\",\n  \"kind\": \"KEYS\",\n  \"ifNotExists\": true\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -2203,7 +2203,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
 					},
 					"response": [
 						{
@@ -2505,9 +2505,9 @@
 							"raw": "{\n  \"column\": \"evaluations\",\n  \"name\": \"evale_idx\",\n  \"kind\": \"ENTRIES\",\n  \"ifNotExists\": true\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -2524,7 +2524,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
 					},
 					"response": [
 						{
@@ -2826,9 +2826,9 @@
 							"raw": "{\n  \"column\": \"current_country\",\n  \"name\": \"country_idx\",\n  \"ifNotExists\": true\n}\n"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -2845,7 +2845,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables\n\n{\n        \"name\": \"users\",\n        \"columnDefinitions\":\n          [\n        {\n              \"name\": \"firstname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"lastname\",\n              \"typeDefinition\": \"text\"\n            },\n        {\n              \"name\": \"favorite color\",\n              \"typeDefinition\": \"text\"\n            }\n          ],\n        \"primaryKey\":\n          {\n            \"partitionKey\": [\"firstname\"],\n            \"clusteringKey\": [\"lastname\"]\n          },\n        \"tableOptions\":\n          {\n            \"defaultTimeToLive\": 0,\n            \"clusteringExpression\":\n              [{ \"column\": \"lastname\", \"order\": \"ASC\" }]\n          }\n }"
 					},
 					"response": [
 						{
@@ -3157,12 +3157,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces"
 					},
 					"response": []
 				},
@@ -3202,15 +3202,15 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace"
 					},
 					"response": []
 				},
@@ -3254,16 +3254,16 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
 								"tables"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables"
 					},
 					"response": []
 				},
@@ -3311,9 +3311,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -3322,7 +3322,7 @@
 								"columns"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns"
 					},
 					"response": []
 				},
@@ -3364,9 +3364,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns/:colName",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns/:colName",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -3382,7 +3382,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
 					},
 					"response": []
 				},
@@ -3430,9 +3430,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -3441,7 +3441,7 @@
 								"indexes"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
 					},
 					"response": []
 				},
@@ -3488,16 +3488,16 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/types",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/types",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
 								"types"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
 					},
 					"response": []
 				}
@@ -3547,16 +3547,16 @@
 							"raw": "{\n    \"firstname\": \"{{user1fn}}\",\n    \"lastname\": \"{{user1ln}}\",\n    \"favorite_color\": \"blue\",\n    \"favorite_books\": \"{ 'Native Son', 'The Joy Luck Club' }\",\n    \"top_three_tv_shows\": \"[ 'The Magicians', 'The Librarians', 'Supergirl' ]\",\n    \"evaluations\": \"{ '2020':'excellent', '2019':'brilliant' }\",\n    \"current_country\": \"( 'USA', '2000-01-01', '2021-04-01' )\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}",
+							"raw": "{{base_rest_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}",
 							"host": [
-								"{{base_url}}{{base_rest_api}}"
+								"{{base_rest_url}}{{base_rest_api}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
 								"{{rtable}}"
 							]
 						},
-						"description": "NOT WORKING, NEED TO FIGURE OUT\n\n,\n    \"address\": \"{ 'street': '345 Clark Ave', 'city': 'Chicago', 'state': 'Illinois', 'zip': '54321' }\"{{base_url}}/v2/keyspaces/users_keyspace/users"
+						"description": "NOT WORKING, NEED TO FIGURE OUT\n\n,\n    \"address\": \"{ 'street': '345 Clark Ave', 'city': 'Chicago', 'state': 'Illinois', 'zip': '54321' }\"{{base_rest_url}}/v2/keyspaces/users_keyspace/users"
 					},
 					"response": []
 				},
@@ -3601,9 +3601,9 @@
 							"raw": "{\"firstname\": \"{{user2fn}}\",\n  \"lastname\": \"{{user2ln}}\",\n  \"favorite_color\": \"grey\",\n  \"favorite_books\": \"{ 'Emma', 'The Color Purple' }\",\n  \"top_three_tv_shows\": \"[ 'The Magicians', 'The Librarians', 'Agents of SHIELD' ]\",\n  \"evaluations\": \"{ 2020:good, 2019:okay }\",\n  \"current_country\": \"( 'France', '2016-01-01', '2020-02-02' )\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}",
+							"raw": "{{base_rest_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}",
 							"host": [
-								"{{base_url}}{{base_rest_api}}"
+								"{{base_rest_url}}{{base_rest_api}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -3650,9 +3650,9 @@
 							"raw": "{\n    \"email\": \"mookie.betts.email@email.com\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:id",
+							"raw": "{{base_rest_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:id",
 							"host": [
-								"{{base_url}}{{base_rest_api}}"
+								"{{base_rest_url}}{{base_rest_api}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -3666,7 +3666,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/keyspaces/users_keyspace/users/Mookie/Betts\n\n{\n    \"email\": \"mookie.betts.email@email.com\"\n}"
+						"description": "{{base_rest_url}}/v2/keyspaces/users_keyspace/users/Mookie/Betts\n\n{\n    \"email\": \"mookie.betts.email@email.com\"\n}"
 					},
 					"response": []
 				},
@@ -3712,9 +3712,9 @@
 							"raw": "{\n    \"email\": \"mookie.betts.new-email@email.com\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:id",
+							"raw": "{{base_rest_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:id",
 							"host": [
-								"{{base_url}}{{base_rest_api}}"
+								"{{base_rest_url}}{{base_rest_api}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -3728,7 +3728,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/keyspaces/users_keyspace/users/Mookie/Betts\n\n{\n    \"email\": \"mookie.betts.new-email@email.com\"\n}"
+						"description": "{{base_rest_url}}/v2/keyspaces/users_keyspace/users/Mookie/Betts\n\n{\n    \"email\": \"mookie.betts.new-email@email.com\"\n}"
 					},
 					"response": []
 				}
@@ -3770,9 +3770,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:partitionKey",
+							"raw": "{{base_rest_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:partitionKey",
 							"host": [
-								"{{base_url}}{{base_rest_api}}"
+								"{{base_rest_url}}{{base_rest_api}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -3786,7 +3786,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/keyspaces/users_keyspace/users?where={\"firstname\":{\"$eq\":\"Mookie\"}}"
+						"description": "{{base_rest_url}}/v2/keyspaces/users_keyspace/users?where={\"firstname\":{\"$eq\":\"Mookie\"}}"
 					},
 					"response": []
 				},
@@ -3822,9 +3822,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:id",
+							"raw": "{{base_rest_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:id",
 							"host": [
-								"{{base_url}}{{base_rest_api}}"
+								"{{base_rest_url}}{{base_rest_api}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -3839,7 +3839,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/keyspaces/users_keyspace/users/Mookie/Betts"
+						"description": "{{base_rest_url}}/v2/keyspaces/users_keyspace/users/Mookie/Betts"
 					},
 					"response": []
 				},
@@ -3875,9 +3875,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}?where={\"firstname\":{\"$eq\":\"{{user1fn}}\"}}",
+							"raw": "{{base_rest_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}?where={\"firstname\":{\"$eq\":\"{{user1fn}}\"}}",
 							"host": [
-								"{{base_url}}{{base_rest_api}}"
+								"{{base_rest_url}}{{base_rest_api}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -3903,7 +3903,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/keyspaces/users_keyspace/users?where={\"firstname\":{\"$eq\":\"Mookie\"}}"
+						"description": "{{base_rest_url}}/v2/keyspaces/users_keyspace/users?where={\"firstname\":{\"$eq\":\"Mookie\"}}"
 					},
 					"response": []
 				},
@@ -3946,9 +3946,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}?where={\"evaluations\":{\"$containsKey\":\"2020\"}}&fields=firstname,favorite_books",
+							"raw": "{{base_rest_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}?where={\"evaluations\":{\"$containsKey\":\"2020\"}}&fields=firstname,favorite_books",
 							"host": [
-								"{{base_url}}{{base_rest_api}}"
+								"{{base_rest_url}}{{base_rest_api}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -4013,7 +4013,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/keyspaces/users_keyspace/users?where={\"firstname\":{\"$eq\":\"Mookie\"}}"
+						"description": "{{base_rest_url}}/v2/keyspaces/users_keyspace/users?where={\"firstname\":{\"$eq\":\"Mookie\"}}"
 					},
 					"response": []
 				}
@@ -4050,9 +4050,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:id",
+							"raw": "{{base_rest_url}}{{base_rest_api}}/{{rkeyspace}}/{{rtable}}/:id",
 							"host": [
-								"{{base_url}}{{base_rest_api}}"
+								"{{base_rest_url}}{{base_rest_api}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -4066,7 +4066,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/keyspaces/users_keyspace/users/Mookie/Betts"
+						"description": "{{base_rest_url}}/v2/keyspaces/users_keyspace/users/Mookie/Betts"
 					},
 					"response": []
 				}
@@ -4103,9 +4103,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns/:colName",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/columns/:colName",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -4121,7 +4121,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
 					},
 					"response": []
 				},
@@ -4153,9 +4153,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes/:idxname",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}/indexes/:idxname",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -4172,7 +4172,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
 					},
 					"response": []
 				},
@@ -4204,9 +4204,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/tables/{{rtable}}",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -4214,47 +4214,7 @@
 								"{{rtable}}"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users"
-					},
-					"response": []
-				},
-				{
-					"name": "GQL: Drop type address",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "X-Cassandra-Token",
-								"value": "{{AUTH_TOKEN}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "graphql",
-							"graphql": {
-								"query": "mutation dropTypeAddress {\n  dropType(\n      keyspaceName:\"{{rkeyspace}}\" \n      typeName:\"address_type\"\n      ifExists:true\n    )\n}",
-								"variables": ""
-							}
-						},
-						"url": {
-							"raw": "{{gql_base_url}}{{base_gql_schema}}",
-							"host": [
-								"{{gql_base_url}}{{base_gql_schema}}"
-							]
-						}
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users"
 					},
 					"response": []
 				},
@@ -4286,9 +4246,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}/types/:udtname",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}/types/:udtname",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}",
@@ -4302,7 +4262,7 @@
 								}
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace/tables/users/columns/email"
 					},
 					"response": []
 				},
@@ -4334,15 +4294,15 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}{{base_rest_schema}}/{{rkeyspace}}",
+							"raw": "{{base_rest_url}}{{base_rest_schema}}/{{rkeyspace}}",
 							"host": [
-								"{{base_url}}{{base_rest_schema}}"
+								"{{base_rest_url}}{{base_rest_schema}}"
 							],
 							"path": [
 								"{{rkeyspace}}"
 							]
 						},
-						"description": "{{base_url}}/v2/schemas/keyspaces/users_keyspace"
+						"description": "{{base_rest_url}}/v2/schemas/keyspaces/users_keyspace"
 					},
 					"response": []
 				}
