@@ -10,7 +10,7 @@
     "build:restapiv1": "redoc-cli bundle api/StargateRESTv1.yaml --output modules/ROOT/attachments/restv1.html",
     "build:docapi": "npx redoc-cli bundle api/StargateDocv2.yaml --output modules/ROOT/attachments/docv2.html",
     "build:oaslinter": "npx @redocly/openapi-cli lint api/StargateRESTv2.yaml && npx @redocly/openapi-cli lint api/StargateRESTv1.yaml && npx @redocly/openapi-cli lint api/StargateDocv2.yaml && npx @redocly/openapi-cli lint api/DevOpsv2.yaml",
-    "build:linkinator": "npx linkinator https://stargate.io/docs --recurse --skip ' https://localhost?'"
+    "build:linkinator": "npx linkinator https://stargate.io/docs --recurse --skip ' http://localhost?'"
   },
   "repository": {
     "type": "git",
