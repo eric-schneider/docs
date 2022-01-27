@@ -129,8 +129,8 @@ such as `createTable`, or `dropTable`.
 == Using Postman
 
 If you prefer, you can use Postman as a client interface for exploring the GraphQL API
-(https://www.postman.com/downloads/[download here, window="_blank"]).
-We've provided a
-https://raw.githubusercontent.com/stargate/docs/main/modules/developers-guide/examples/json/Stargate_GraphQL_API_library_Astra.postman_collection.json[Stargate GraphQL API Postman Astra Collection]
-that you can import in Postman to play with the examples shown in this walkthrough.
+(https://www.postman.com/downloads/[download here]).
+See xref:ROOT:tooling.adoc[Tooling Resources] for links to downloadable collections and environments.
+Instructions for configuring the environments for Stargate OSS and link:https://astra.datastax.com[Astra] are available.
+You can immediately import the documentation code examples and explore!
 // end::UsingPostman[]
