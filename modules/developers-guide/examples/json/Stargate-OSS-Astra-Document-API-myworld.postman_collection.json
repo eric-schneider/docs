@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ed8f5dda-c446-46e2-a9f0-c13d9ab32809",
+		"_postman_id": "4384b1a7-f99e-4f91-a20f-02f2e69c2acf",
 		"name": "Stargate-OSS-Astra-Document-API:myworld",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -14,7 +14,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "73d81ed7-e2a5-41e8-949b-7ad3badcf985",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"postman.setEnvironmentVariable(\"AUTH_TOKEN\", jsonData.authToken);"
@@ -44,10 +43,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"{{auth_username}}\",\n    \"password\": \"{{auth_password}}\"\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n    \"username\": \"{{auth_username}}\",\n    \"password\": \"{{auth_password}}\"\n}"
 						},
 						"url": {
 							"raw": "{{base_auth_url}}/{{base_auth_api_path}}",
@@ -74,8 +70,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "create schema",
@@ -86,7 +81,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9027ead1-bdbc-4c39-ba42-3ba522222146",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -116,10 +110,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"{{namespace}}\"\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n    \"name\": \"{{namespace}}\"\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_schema}}",
@@ -362,7 +353,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "8d87e904-7850-4fa8-a9a0-e8bc98d7d9c1",
 								"exec": [
 									""
 								],
@@ -372,7 +362,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "2746ed32-47f4-4923-b889-3109487b4019",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -402,10 +391,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"{{namespace}}\",\n    \"replicas\": 1\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n    \"name\": \"{{namespace}}\",\n    \"replicas\": 1\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_schema}}",
@@ -648,7 +634,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7c56c288-9377-40b8-a3f3-ec294b92d45c",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -678,10 +663,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"myworld_dcs\",\n    \"datacenters\": [ {\"name\": \"dc1\"}, {\"name\": \"dc2\", \"replicas\": 5} ]\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n    \"name\": \"myworld_dcs\",\n    \"datacenters\": [ {\"name\": \"dc1\"}, {\"name\": \"dc2\", \"replicas\": 5} ]\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_schema}}",
@@ -918,8 +900,7 @@
 						}
 					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "retrieve schema",
@@ -930,7 +911,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9634b1da-4cf3-4b29-a04d-cb91a83daf41",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -970,10 +950,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {}
-							}
+							"raw": ""
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_schema}}",
@@ -1216,7 +1193,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "500c90d9-917f-40b1-b52c-1accb8d4422c",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1249,10 +1225,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {}
-							}
+							"raw": ""
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_schema}}/{{namespace}}",
@@ -1492,8 +1465,7 @@
 						}
 					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "insert data",
@@ -1504,7 +1476,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "66909104-f55a-4826-9193-c71c1cd91bfd",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -1535,10 +1506,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": \"some-stuff\",\n  \"other\": \"This is nonsensical stuff.\"\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n  \"id\": \"some-stuff\",\n  \"other\": \"This is nonsensical stuff.\"\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}",
@@ -1786,7 +1754,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5d8efdb6-90f8-4122-9972-565e56973c8f",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1816,10 +1783,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"firstname\": \"{{user1}}\",\n  \"lastname\": \"Doe\",\n  \"email\": \"janet.doe@gmail.com\",\n  \"favorite color\": \"grey\"\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n  \"firstname\": \"{{user1}}\",\n  \"lastname\": \"Doe\",\n  \"email\": \"janet.doe@gmail.com\",\n  \"favorite color\": \"grey\"\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user1}}",
@@ -2068,7 +2032,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "681e2caf-0fc6-4035-a0e4-f28794909827",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2097,10 +2060,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"firstname\": \"{{user3}}\",\n  \"lastname\": \"Doe\",\n  \"email\": \"janet.doe@gmail.com\",\n  \"favorite color\": \"grey\"\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n  \"firstname\": \"{{user3}}\",\n  \"lastname\": \"Doe\",\n  \"email\": \"janet.doe@gmail.com\",\n  \"favorite color\": \"grey\"\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user3}}",
@@ -2349,7 +2309,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "acdd7258-db9d-4dbb-b46c-75b17d3595b5",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2378,10 +2337,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"firstname\": \"{{user2}}\",\n    \"lastname\": \"Doe\",\n    \"weights\": {\n      \"type\": \"bench press\",\n      \"weight\": 150,\n      \"reps\": 15\n  }\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n    \"firstname\": \"{{user2}}\",\n    \"lastname\": \"Doe\",\n    \"weights\": {\n      \"type\": \"bench press\",\n      \"weight\": 150,\n      \"reps\": 15\n  }\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}",
@@ -2630,7 +2586,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "993b8cd1-b99e-442e-aab6-ee32236de660",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2659,10 +2614,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n      \"firstname\": \"Joseph\"\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n      \"firstname\": \"Joseph\"\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}",
@@ -2911,7 +2863,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "0074560c-71d0-47b6-8667-beadf44755c7",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2940,10 +2891,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"reps\": 10,\n    \"type\": \"squat\",\n    \"weight\": 350\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n    \"reps\": 10,\n    \"type\": \"squat\",\n    \"weight\": 350\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}/weights",
@@ -3193,7 +3141,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c1eb58ce-6fcd-48fd-9122-018f20dfbff4",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3222,10 +3169,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"firstname\": \"JanetLee\",\n    \"lastname\": \"Doe\"\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n    \"firstname\": \"JanetLee\",\n    \"lastname\": \"Doe\"\n}"
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user1}}",
@@ -3468,8 +3412,7 @@
 						}
 					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "retrieve data",
@@ -3480,7 +3423,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "47bb6bbc-83b5-4381-a230-260fc8d4d422",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3513,10 +3455,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {}
-							}
+							"raw": ""
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}?page-size=3",
@@ -3770,7 +3709,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "05230794-8ad1-48dd-a107-a9f4b4ff3c92",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3803,10 +3741,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {}
-							}
+							"raw": ""
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}",
@@ -4055,7 +3990,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "004655d5-634d-4adc-8498-46e90a1b474a",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4088,10 +4022,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {}
-							}
+							"raw": ""
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}/weights",
@@ -4341,7 +4272,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "2d536ec5-0b42-48f5-acdf-757fc2d2cca9",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4374,10 +4304,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {}
-							}
+							"raw": ""
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}/{{user2}}/weights/type",
@@ -4628,7 +4555,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c581e258-311e-4225-8420-02f656121226",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4661,10 +4587,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {}
-							}
+							"raw": ""
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_api}}/{{namespace}}/collections/{{collection}}?where={\"firstname\":{\"$eq\":\"{{user2a}}\"}}&fields=[\"firstname\", \"lastname\",\"weights\"]",
@@ -4941,13 +4864,11 @@
 						}
 					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "delete data",
-			"item": [],
-			"protocolProfileBehavior": {}
+			"item": []
 		},
 		{
 			"name": "delete schema",
@@ -4969,10 +4890,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {}
-							}
+							"raw": ""
 						},
 						"url": {
 							"raw": "{{base_rest_url}}{{base_doc_schema}}/{{namespace}}",
@@ -5212,15 +5130,13 @@
 						}
 					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "fc951e88-f1be-4f5b-aa3d-4c5972da22a0",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -5230,13 +5146,11 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b9a8cb97-1c10-4030-bab3-1b59dc4bd998",
 				"type": "text/javascript",
 				"exec": [
 					""
 				]
 			}
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
