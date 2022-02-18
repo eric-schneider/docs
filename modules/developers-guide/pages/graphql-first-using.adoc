@@ -221,7 +221,7 @@ Required if the field is a set or list.
 
 The fields `author`, `reviews`, `address` are defined as arrays by the addition of square brackets,
 `reviews: [Review]`.
-Note that `reviews` and `addresses` are arrays of xref:graphql-first-using.adoc_create_a_user_defined_type_udt[UDTs]
+Note that `reviews` and `addresses` are arrays of xref:graphql-first-using.adoc#_create_a_user_defined_type_udt[UDTs]
 whereas `author` is a list of Strings to name each author.
 // end::CreateObjectTypes[]
 
