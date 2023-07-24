@@ -1,4 +1,0 @@
-[NOTE]
-====
-Lightweight transactions (LWT) are not supported in the Stargate REST API.
-====

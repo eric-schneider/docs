@@ -1,4 +1,0 @@
-* xref:core-index.adoc[Stargate Overview]
-// * xref:release-notes.adoc[Release notes]
-* xref:FAQ.adoc[FAQ]
-
