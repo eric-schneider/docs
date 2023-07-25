@@ -1,1 +1,6 @@
-.DS_Store
+.DS_store
+package-lock.json
+node_modules/
+
+# GRADLE
+/.gradle/
