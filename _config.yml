@@ -1,2 +1,3 @@
+safe: false
 include:
-  - "docs/latest/develop/_attachments/docv2.html"
+  - "_attachments"
