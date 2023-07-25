@@ -2,3 +2,4 @@ safe: false
 include:
   - "_attachments"
   - "_images"
+  - ".htaccess"
