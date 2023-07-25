@@ -1,2 +1,2 @@
 exclude:
-  - directory_to_exclude/
+  - docs/
